@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/Number_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F00"
+        android:textSize="30sp"
+        android:text="@string/a"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/Suit_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/heart"
+        android:layout_below = "@+id/Number_left"
+        android:layout_above="@+id/Suit_mid"
+        />
+
+    <ImageView
+        android:id="@+id/Suit_mid"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/heart"
+        />
+
+    <ImageView
+        android:id = "@+id/Suit_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Suit_mid"
+        android:layout_toRightOf="@+id/Suit_mid"
+        android:src="@mipmap/heart"
+        android:scaleY="-1"
+        />
+
+    <TextView
+        android:id="@+id/Number_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Suit_right"
+        android:layout_toRightOf="@+id/Suit_mid"
+        android:textColor="#F00"
+        android:textSize="30sp"
+        android:text="@string/a"
+        android:layout_marginLeft="10dp"
+        android:rotation="180"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:onClick="click"
+        />
+</RelativeLayout>

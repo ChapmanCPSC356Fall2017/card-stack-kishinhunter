@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Number_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textColor="#F00"
+        android:textSize="30sp"
+        android:text="@string/a"
+        android:layout_marginLeft="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/Suit_mid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@mipmap/heart"
+
+        />
+
+    <ImageView
+        android:id = "@+id/Suit_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@mipmap/heart"
+        android:scaleY="-1"
+        android:layout_marginTop="425dp"
+
+        />
+
+    <TextView
+        android:id="@+id/Number_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:foregroundGravity="bottom"
+        android:textColor="#F00"
+        android:textSize="30sp"
+        android:text="@string/a"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="475dp"
+        android:rotation="180"
+        />
+
+    <ImageView
+        android:id="@+id/Suit_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/heart" />
+</FrameLayout>
+
